@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="B4877931BFFD40EDC20109801012E430349EBDAC37F3B1952829922AD65EFBBCB1AD09136F7897A075CCB6261422B00B0E563564DB6AE3E1F50448F2D9438FC1" Timestamp="1D561D064FEE027" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]SimUDuck" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="147e9dd650284248b75853dceddcd718" IsTabStop="[bool]True" Label="[UIModel]7eabf49cf1da40fc9cf206fb7678628c" Left="[float]544" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]372" Value="{DataItemBinding Id=a87e933e8788464fb0a0ccf1865f3935}" Width="[float]176" p4:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="d3c4a8c094d84c258c04e8934402ac59" IsReadOnly="[bool]True" Label="[UIModel]3b21d4bb10634955ad18a0fb3abb4b94" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="3b21d4bb10634955ad18a0fb3abb4b94" LabelOwner="[UIModel]d3c4a8c094d84c258c04e8934402ac59" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="a8ca84dffaf8407099a05c581fbd8b10" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Label="[UIModel]69fa17c6136640a88f46aace9f5f4ec2" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="69fa17c6136640a88f46aace9f5f4ec2" LabelOwner="[UIModel]a8ca84dffaf8407099a05c581fbd8b10" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="f5091cdec55d4359a7b0c33cfad45004" IsReadOnly="[bool]True" Label="[UIModel]e8c94ce5cea479a9d689e9117643c35" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="e8c94ce5cea479a9d689e9117643c35" LabelOwner="[UIModel]f5091cdec55d4359a7b0c33cfad45004" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="7eabf49cf1da40fc9cf206fb7678628c" LabelOwner="[UIModel]147e9dd650284248b75853dceddcd718" Left="[float]544" Text="[string]Error out" Top="[float]352" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
+			<ValueClassControl BaseName="[string]Duck" Id="a64cf9d58f4c49e6877aacfd61c12bef" IsReadOnly="[bool]True" IsTabStop="[bool]False" Label="[UIModel]c5f35ae562bb46ff80b56919638063e4" Left="[float]544" TabIndex="[int]1" Top="[float]52" Value="{DataItemBinding Id=66f165fa3ed944bd95ff3bbb9d767966}" ValueClassControl="[Type]@aeeff63bcfa748a6a042a1dfeb223b34" p4:ControlDefinitionChecksum="A6oIn0Etwsw3ZFrv8HIHcaAEON1tWnqCTlsIzOjgalw=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Duck.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+			</ValueClassControl>
+			<Label Height="[float]16" Id="c5f35ae562bb46ff80b56919638063e4" LabelOwner="[UIModel]a64cf9d58f4c49e6877aacfd61c12bef" Left="[float]544" Text="[string]Duck out" Top="[float]32" Width="[float]48" xmlns="http://www.ni.com/PanelCommon" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="12">
+			<MethodCall Bounds="975 450 40 40" Id="65c12b47f9e449bfb8813f485e2223e7" ResolveFailedHint="&quot;C:\\Users\\Kåre Juul Kirkegaard\\Documents\\github\\Sandbox\\Head First - Design Patterns\\SimUDuck\\Duck.gtype\\Display.gvi&quot;" Signature="@e3d3726f3d9248fc8b4d00c3409de8da" Target="Duck.gtype::Display.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Duck in" />
+						<Parameter Id="L3" Desc="Error in" />
+						<Parameter Id="R0" Desc="Duck out" />
+						<Parameter Id="R1" Desc="Display" />
+						<Parameter Id="R3" Desc="Error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Direction="Input" Id="L0" Usage="DynamicDispatch" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Direction="Output" Hotspot="40 5" Id="R0" Usage="DynamicDispatch" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="855 450 40 40" Id="fbf88b3e1b6e483baf4f97aa343b07e0" ResolveFailedHint="&quot;C:\\Users\\Kåre Juul Kirkegaard\\Documents\\github\\Sandbox\\Head First - Design Patterns\\SimUDuck\\Duck.gtype\\Fly.gvi&quot;" Signature="@e64f296550b64dbe8bdfcaa58a72b67b" Target="Duck.gtype::Fly.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Duck in" />
+						<Parameter Id="L3" Desc="Error in" />
+						<Parameter Id="R0" Desc="Duck out" />
+						<Parameter Id="R1" Desc="Fly" />
+						<Parameter Id="R3" Desc="Error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Direction="Input" Id="L0" Usage="DynamicDispatch" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Direction="Output" Hotspot="40 5" Id="R0" Usage="DynamicDispatch" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="915 450 40 40" Id="7b5ec6ca4a9b43e3a18ef77a8dfdda20" ResolveFailedHint="&quot;C:\\Users\\Kåre Juul Kirkegaard\\Documents\\github\\Sandbox\\Head First - Design Patterns\\SimUDuck\\Duck.gtype\\Quack.gvi&quot;" Signature="@548fa02690814b72bb709b3b5bcef14a" Target="Duck.gtype::Quack.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Duck in" />
+						<Parameter Id="L3" Desc="Error in" />
+						<Parameter Id="R0" Desc="Duck out" />
+						<Parameter Id="R1" Desc="Quack" />
+						<Parameter Id="R3" Desc="Error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Direction="Input" Id="L0" Usage="DynamicDispatch" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Direction="Output" Hotspot="40 5" Id="R0" Usage="DynamicDispatch" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1035 450 40 40" Id="90b7d243e0544bfea70e97d0cc1a69b5" ResolveFailedHint="&quot;C:\\Users\\Kåre Juul Kirkegaard\\Documents\\github\\Sandbox\\Head First - Design Patterns\\SimUDuck\\Duck.gtype\\Swim.gvi&quot;" Signature="@5dd306cd3b8d45c78cd7114f139da08a" Target="Duck.gtype::Swim.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Duck in" />
+						<Parameter Id="L3" Desc="Error in" />
+						<Parameter Id="R0" Desc="Duck out" />
+						<Parameter Id="R1" Desc="Swim" />
+						<Parameter Id="R3" Desc="Error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Direction="Input" Id="L0" Usage="DynamicDispatch" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Direction="Output" Hotspot="40 5" Id="R0" Usage="DynamicDispatch" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="e0855a1c1b0c48719fbe907833f52382" Joints="N(fbf88b3e1b6e483baf4f97aa343b07e0:R3)|(895,485) N(7b5ec6ca4a9b43e3a18ef77a8dfdda20:L3)|(915,485)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="61a850ff1d5f47269ffb5e33e78522e3" Joints="N(7b5ec6ca4a9b43e3a18ef77a8dfdda20:R3)|(955,485) N(65c12b47f9e449bfb8813f485e2223e7:L3)|(975,485)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="c7284e8e64bc4139a221e08916cb5135" Joints="N(65c12b47f9e449bfb8813f485e2223e7:R3)|(1015,485) N(90b7d243e0544bfea70e97d0cc1a69b5:L3)|(1035,485)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="6255cd1115ba4578bedb3a2c1b1b84e3" Joints="N(fbf88b3e1b6e483baf4f97aa343b07e0:R0)|(895,455) N(7b5ec6ca4a9b43e3a18ef77a8dfdda20:L0)|(915,455)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="f8e6eddf8233470bacb3872c2f6368d6" Joints="N(7b5ec6ca4a9b43e3a18ef77a8dfdda20:R0)|(955,455) N(65c12b47f9e449bfb8813f485e2223e7:L0)|(975,455)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2cab20fe666a411bb7c18daa0e067743" Joints="N(65c12b47f9e449bfb8813f485e2223e7:R0)|(1015,455) N(90b7d243e0544bfea70e97d0cc1a69b5:L0)|(1035,455)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1220 480 40 15" DataItem="a87e933e8788464fb0a0ccf1865f3935" Id="1261029f9ca4447d8d881bf7684a8f30" Label="f5e1fe435d53402fb08d89f6b55d8a93" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="1261029f9ca4447d8d881bf7684a8f30" Bounds="1265 480 50 14" Id="f5e1fe435d53402fb08d89f6b55d8a93" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error out</p.Text>
+			</NodeLabel>
+			<Wire Id="965667c059a24c94bd16769c0e7c70c5" Joints="N(90b7d243e0544bfea70e97d0cc1a69b5:R3)|(1075,485) N(1261029f9ca4447d8d881bf7684a8f30:Value)|(1223,485)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1220 450 40 15" DataItem="66f165fa3ed944bd95ff3bbb9d767966" Id="4e2066d28313431a80c3d0354bd74e82" Label="11d3f6c838684b0e91e3a83b2a99b0af" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@aeeff63bcfa748a6a042a1dfeb223b34" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="4e2066d28313431a80c3d0354bd74e82" Bounds="1265 450 50 14" Id="11d3f6c838684b0e91e3a83b2a99b0af" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Duck out</p.Text>
+			</NodeLabel>
+			<Wire Id="e80435d1f1974729aa6e5b3d304a4beb" Joints="N(90b7d243e0544bfea70e97d0cc1a69b5:R0)|(1075,455) N(4e2066d28313431a80c3d0354bd74e82:Value)|(1223,455)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1215 325 40 15" DataItem="5cce5f2e600e430fbe498551150d1262" Id="6c32378545214953a8b2b7fbcce0eed4" Label="863778c7207c47a9bcd3646caaf25a79" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="6c32378545214953a8b2b7fbcce0eed4" Bounds="1260 325 34 14" Id="863778c7207c47a9bcd3646caaf25a79" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>String</p.Text>
+			</NodeLabel>
+			<FormatIntoString Bounds="1140 325 40 70" Id="29d7b1855a234effaefa5159f2d35da2" Terminals="formatString=da6d680fc2864a03a88be2a98bdab031, outString=6520bdca72d94d0999943b493c705c07, c0t0v=44131c6709b74e378e19bc710a3100f4, c1t0v=88fda8bd16cf43fb958db2f800d79355, c2t0v=8f47e80950b1487395d6df423fcb6680, c3t0v=22460eb99d654bda98ad18623afe06fe" VerticalChunkCount="4" />
+			<Literal Bounds="825 240 125 95" DataType="String" Id="a9e63b80d98849ea8a1a669ecb6c2815" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>"Duck Type: %s\nCan fly: %s\nCan swim: %s\nCan quack: %s"</p.Data>
+				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="da6d680fc2864a03a88be2a98bdab031" Joints="N(a9e63b80d98849ea8a1a669ecb6c2815:Out)|(950,245) h(215) N(29d7b1855a234effaefa5159f2d35da2:formatString)|(1165,325)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="44131c6709b74e378e19bc710a3100f4" Joints="N(65c12b47f9e449bfb8813f485e2223e7:R1)|(1015,465) h(6) v(-105) N(29d7b1855a234effaefa5159f2d35da2:c0t0v)|(1140,360)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="88fda8bd16cf43fb958db2f800d79355" Joints="N(fbf88b3e1b6e483baf4f97aa343b07e0:R1)|(895,465) h(6) v(-95) N(29d7b1855a234effaefa5159f2d35da2:c1t0v)|(1140,370)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="8f47e80950b1487395d6df423fcb6680" Joints="N(90b7d243e0544bfea70e97d0cc1a69b5:R1)|(1075,465) h(6) v(-85) N(29d7b1855a234effaefa5159f2d35da2:c2t0v)|(1140,380)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="22460eb99d654bda98ad18623afe06fe" Joints="N(7b5ec6ca4a9b43e3a18ef77a8dfdda20:R1)|(955,465) h(6) v(-75) N(29d7b1855a234effaefa5159f2d35da2:c3t0v)|(1140,390)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="6520bdca72d94d0999943b493c705c07" Joints="N(29d7b1855a234effaefa5159f2d35da2:outString)|(1180,330) N(6c32378545214953a8b2b7fbcce0eed4:Value)|(1218,330)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="720 405 40 15" DataType="@7d0288beb56645beb804d14ff733b25a" Id="ba6d033f81824dd6b8a932d73b7af80c" Label="d4521f98d0594fdeac4fa70bed7adcb4" p4:ControlDefinitionChecksum="sBFsecXEE3qHwHh65UB72C2nzwxKY00TxqySmmrmJks=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>null</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="MallardDuck.gtype" />
+					<p4:TypeDefinitionTarget TargetName="MallardDuck.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<ValueClassLiteralBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="ba6d033f81824dd6b8a932d73b7af80c" Bounds="720 388 68 14" Id="d4521f98d0594fdeac4fa70bed7adcb4" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>MallardDuck</p.Text>
+			</NodeLabel>
+			<Wire Id="97a78452e7e74bcf8b8781eeee77a79e" Joints="N(f5e467c2a00b45bab4965102b6eaca26:Out)|(760,455) N(fbf88b3e1b6e483baf4f97aa343b07e0:L0)|(855,455)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="720 450 40 15" DataType="@d47cc812ab7a4812a4c92afafb70b4c5" Id="f5e467c2a00b45bab4965102b6eaca26" Label="69f29e8383c4476e8c28e37b69e32913" p4:ControlDefinitionChecksum="w5xL1XUlN39GjwpqbzUOu1Knh2FjySAvXfiA/6tmU/M=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>null</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="RubberDuck.gtype" />
+					<p4:TypeDefinitionTarget TargetName="RubberDuck.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<ValueClassLiteralBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="f5e467c2a00b45bab4965102b6eaca26" Bounds="720 433 68 14" Id="69f29e8383c4476e8c28e37b69e32913" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>RubberDuck</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<PanelExecutionWindow Id="14" />
+			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Enabled="[bool]True" Height="[float]136" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="45668d836df84cd2b386ffafb3d758e4" IsReadOnly="[bool]True" Label="[UIModel]86100da5f94846f69c1d762b87156807" Left="[float]52" MinHeight="[float]24" TabIndex="[int]0" Text="{DataItemBinding Id=5cce5f2e600e430fbe498551150d1262}" Top="[float]68" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]232" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="86100da5f94846f69c1d762b87156807" LabelOwner="[UIModel]45668d836df84cd2b386ffafb3d758e4" Left="[float]52" Text="[string]String" Top="[float]48" Width="[float]31" xmlns="http://www.ni.com/PanelCommon" />
+		</NativeFrontPanel>
+		<DataItem DataType="Error" Id="a87e933e8788464fb0a0ccf1865f3935" Name="Error out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="@aeeff63bcfa748a6a042a1dfeb223b34" Id="66f165fa3ed944bd95ff3bbb9d767966" Name="Duck out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Duck.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="5cce5f2e600e430fbe498551150d1262" Name="String" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="aeeff63bcfa748a6a042a1dfeb223b34">
+			<Composite Id="1" Name="Duck.gtype" GenericTypeDefinition="Void" BaseType="@3e78da1d3fa24525a6a703c8d030f380">
+				<Members>
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="Display.gvi" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="3" IsStatic="False" IsConstructor="False" Name="Fly.gvi" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="4" IsStatic="False" IsConstructor="False" Name="Quack.gvi" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="5" IsStatic="False" IsConstructor="False" Name="Swim.gvi" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e3d3726f3d9248fc8b4d00c3409de8da">
+			<Attributed AttributedType="@ba5d7d7471b9481ea7709dc15c18e1f6">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.Compiler.ThrallMap" Value="[ThrallMapAttributeValue]R0:[L0]" />
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="d47cc812ab7a4812a4c92afafb70b4c5">
+			<Composite Id="1" Name="RubberDuck.gtype" GenericTypeDefinition="Void" BaseType="@aeeff63bcfa748a6a042a1dfeb223b34">
+				<Members>
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="Display.gvi" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="3" IsStatic="False" IsConstructor="False" Name="Quack.gvi" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e64f296550b64dbe8bdfcaa58a72b67b">
+			<Attributed AttributedType="@33af72176310423794078cca00d91514">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.Compiler.ThrallMap" Value="[ThrallMapAttributeValue]R0:[L0]" />
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="548fa02690814b72bb709b3b5bcef14a">
+			<Attributed AttributedType="@fc28ad3033de4af0bc1b745af9ee13a4">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.Compiler.ThrallMap" Value="[ThrallMapAttributeValue]R0:[L0]" />
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="5dd306cd3b8d45c78cd7114f139da08a">
+			<Attributed AttributedType="@48431d1ce94e4e929b88898bdbefc40e">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.Compiler.ThrallMap" Value="[ThrallMapAttributeValue]R0:[L0]" />
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7d0288beb56645beb804d14ff733b25a">
+			<Composite Id="1" Name="MallardDuck.gtype" GenericTypeDefinition="Void" BaseType="@aeeff63bcfa748a6a042a1dfeb223b34">
+				<Members>
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="Display.gvi" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3e78da1d3fa24525a6a703c8d030f380">
+			<Composite Id="1" Name="gObject" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ba5d7d7471b9481ea7709dc15c18e1f6">
+			<Function Id="1" IsStatic="False" IsConstructor="False" Name="Display.gvi" ReturnType="Void" DeclaringType="@aeeff63bcfa748a6a042a1dfeb223b34" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@ee746b4370a14eaaa5916e795c46728d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Duck in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f67ee086bf634ff4b37a69c1a18c2ae6">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@482f0779cdea48db8306d68a38dd5cf4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Duck out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@0fa937fdbd57464b981638532fc83f2e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Display" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@748f6cb8f53f49c7909892a06fb535cc">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="33af72176310423794078cca00d91514">
+			<Function Id="1" IsStatic="False" IsConstructor="False" Name="Fly.gvi" ReturnType="Void" DeclaringType="@aeeff63bcfa748a6a042a1dfeb223b34" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@ee746b4370a14eaaa5916e795c46728d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Duck in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f67ee086bf634ff4b37a69c1a18c2ae6">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@482f0779cdea48db8306d68a38dd5cf4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Duck out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@0fa937fdbd57464b981638532fc83f2e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Fly" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@748f6cb8f53f49c7909892a06fb535cc">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="fc28ad3033de4af0bc1b745af9ee13a4">
+			<Function Id="1" IsStatic="False" IsConstructor="False" Name="Quack.gvi" ReturnType="Void" DeclaringType="@aeeff63bcfa748a6a042a1dfeb223b34" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@ee746b4370a14eaaa5916e795c46728d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Duck in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f67ee086bf634ff4b37a69c1a18c2ae6">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@482f0779cdea48db8306d68a38dd5cf4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Duck out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@0fa937fdbd57464b981638532fc83f2e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Quack" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@748f6cb8f53f49c7909892a06fb535cc">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="48431d1ce94e4e929b88898bdbefc40e">
+			<Function Id="1" IsStatic="False" IsConstructor="False" Name="Swim.gvi" ReturnType="Void" DeclaringType="@aeeff63bcfa748a6a042a1dfeb223b34" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@ee746b4370a14eaaa5916e795c46728d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Duck in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f67ee086bf634ff4b37a69c1a18c2ae6">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@482f0779cdea48db8306d68a38dd5cf4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Duck out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@0fa937fdbd57464b981638532fc83f2e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Swim" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@748f6cb8f53f49c7909892a06fb535cc">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ee746b4370a14eaaa5916e795c46728d">
+			<Parameter InputParameterPassingRule="DynamicDispatch" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@aeeff63bcfa748a6a042a1dfeb223b34" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f67ee086bf634ff4b37a69c1a18c2ae6">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="482f0779cdea48db8306d68a38dd5cf4">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="DynamicDispatch" Name="R0" DataType="@aeeff63bcfa748a6a042a1dfeb223b34" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="0fa937fdbd57464b981638532fc83f2e">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="String" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="748f6cb8f53f49c7909892a06fb535cc">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Error" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Duck.gtype::Display.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<Text Left="[float]5" Text="[string]Display" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]15" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]30">
+								<FontSetting FontFamily="Verdana" FontSize="6" />
+							</Text>
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" HorizontalAlignment="[HorizontalAlignment]Stretch" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Class]Duck.gtype" Top="[float]0" VerticalAlignment="[VerticalAlignment]Stretch" Width="[float]40">
+								<Path Data="[PathGeometry]M 0,11 L 0,2 C 0,0.899999976 0.899999976,0 2,0 L 2,11 L 0,11 Z" Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" HorizontalAlignment="[HorizontalAlignment]Left" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]2" />
+								<Rectangle Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]4,2,4,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]NaN" />
+								<Path Data="[PathGeometry]M 2,11 L 2,2 C 2,0.899999976 1.10000002,0 0,0 L 0,11 L 2,11 Z" Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" HorizontalAlignment="[HorizontalAlignment]Right" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]2" />
+								<Text Foreground="[SMColor]#ffffffff" HorizontalAlignment="[HorizontalAlignment]Left" IsHitTestVisible="[bool]False" Left="[float]9" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Duck" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]2" VerticalAlignment="[VerticalAlignment]Top" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]21">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</Text>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Duck.gtype::Fly.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<Text Left="[float]14" Text="[string]Fly" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]15" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]12">
+								<FontSetting FontFamily="Verdana" FontSize="6" />
+							</Text>
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" HorizontalAlignment="[HorizontalAlignment]Stretch" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Class]Duck.gtype" Top="[float]0" VerticalAlignment="[VerticalAlignment]Stretch" Width="[float]40">
+								<Path Data="[PathGeometry]M 0,11 L 0,2 C 0,0.899999976 0.899999976,0 2,0 L 2,11 L 0,11 Z" Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" HorizontalAlignment="[HorizontalAlignment]Left" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]2" />
+								<Rectangle Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]4,2,4,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]NaN" />
+								<Path Data="[PathGeometry]M 2,11 L 2,2 C 2,0.899999976 1.10000002,0 0,0 L 0,11 L 2,11 Z" Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" HorizontalAlignment="[HorizontalAlignment]Right" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]2" />
+								<Text Foreground="[SMColor]#ffffffff" HorizontalAlignment="[HorizontalAlignment]Left" IsHitTestVisible="[bool]False" Left="[float]9" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Duck" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]2" VerticalAlignment="[VerticalAlignment]Top" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]21">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</Text>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Duck.gtype::Quack.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<Text Left="[float]7" Text="[string]Quack" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]15" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]26">
+								<FontSetting FontFamily="Verdana" FontSize="6" />
+							</Text>
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" HorizontalAlignment="[HorizontalAlignment]Stretch" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Class]Duck.gtype" Top="[float]0" VerticalAlignment="[VerticalAlignment]Stretch" Width="[float]40">
+								<Path Data="[PathGeometry]M 0,11 L 0,2 C 0,0.899999976 0.899999976,0 2,0 L 2,11 L 0,11 Z" Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" HorizontalAlignment="[HorizontalAlignment]Left" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]2" />
+								<Rectangle Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]4,2,4,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]NaN" />
+								<Path Data="[PathGeometry]M 2,11 L 2,2 C 2,0.899999976 1.10000002,0 0,0 L 0,11 L 2,11 Z" Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" HorizontalAlignment="[HorizontalAlignment]Right" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]2" />
+								<Text Foreground="[SMColor]#ffffffff" HorizontalAlignment="[HorizontalAlignment]Left" IsHitTestVisible="[bool]False" Left="[float]9" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Duck" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]2" VerticalAlignment="[VerticalAlignment]Top" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]21">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</Text>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Duck.gtype::Swim.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<Text Left="[float]9" Text="[string]Swim" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]15" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]22">
+								<FontSetting FontFamily="Verdana" FontSize="6" />
+							</Text>
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" HorizontalAlignment="[HorizontalAlignment]Stretch" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Class]Duck.gtype" Top="[float]0" VerticalAlignment="[VerticalAlignment]Stretch" Width="[float]40">
+								<Path Data="[PathGeometry]M 0,11 L 0,2 C 0,0.899999976 0.899999976,0 2,0 L 2,11 L 0,11 Z" Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" HorizontalAlignment="[HorizontalAlignment]Left" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]2" />
+								<Rectangle Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]4,2,4,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]NaN" />
+								<Path Data="[PathGeometry]M 2,11 L 2,2 C 2,0.899999976 1.10000002,0 0,0 L 0,11 L 2,11 Z" Fill="[SMSolidColorBrush]#ff007133" Height="[float]11" HorizontalAlignment="[HorizontalAlignment]Right" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]2" />
+								<Text Foreground="[SMColor]#ffffffff" HorizontalAlignment="[HorizontalAlignment]Left" IsHitTestVisible="[bool]False" Left="[float]9" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Duck" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]2" VerticalAlignment="[VerticalAlignment]Top" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]21">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</Text>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+	<TypeAppearanceTable xmlns="http://www.ni.com/PlatformFramework" />
+</SourceFile>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="062BB91AF0C4F1C20ACAF7B1D02809956F33187E2F21E1F4CFE0A84AC4AF7441219601DA77BA01E1A3DCF7778143DE6B9CAB96E7090660E31A849604C3186C83" Timestamp="1D561CE51B58FE0" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<DataIndexDefinition xmlns="http://www.ni.com/Data" />
+	<EnvoyManagerFile Id="cef473f54d7343588d00fbad9ebc76a9" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="40a38518ad05419f99390c20de65f91f" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="71b6a7a467e64b559a87680a8d2aa606" Name="data.xml" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Id="d13ace64e7b0478294e6f2b5b15fd760" ModelDefinitionType="TDMSRootDefinition" Name="TDMS_Root">
+				<TDMSRootDefinition StoragePath="Data-2019-09-02 203803 836.tdms" xmlns="http://www.ni.com/Data" />
+				<EmbeddedDefinitionReference Id="bad7a47b37f143709084a4c7848953e7" ModelDefinitionType="TDMSGroupDefinition" Name="TDMS_GROUP">
+					<TDMSGroupDefinition GroupName="Capture 1" Source="Fly.gvi" SourceType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Timestamp="09/02/2019 20:38:03" xmlns="http://www.ni.com/Data" />
+					<EmbeddedDefinitionReference Id="f90625c27d0f4fabb1b5eb810399a341" ModelDefinitionType="TDMSDataItemDefinition" Name="Empty String Constant">
+						<TDMSDataItemDefinition DataName="Empty String Constant" DataType="String" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+				</EmbeddedDefinitionReference>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

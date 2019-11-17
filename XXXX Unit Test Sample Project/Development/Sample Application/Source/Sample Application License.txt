@@ -1,0 +1,53 @@
+License type I
+--------------
+This license file covers the GPower {package name} LabVIEW Package.
+
+Copyright (c) GPower.
+
+GPower exclusively owns all rights to this package. Do not use or distribute outside GPower without explicit permission.
+
+License type II
+---------------
+This license file covers the GPower {package name} LabVIEW Package.
+
+Copyright (c) GPower.
+
+GPower owns all rights to this package.
+
+GPower grants to {customer name}* a non-exclusive, non-transferable, non-sublicensable license to use this package as it is in accordance with the documentation and instructions supplied by GPower.
+
+You will not, directly or through others: (a) market, license, distribute, transfer, sublicense or otherwise commercially exploit the package, except as a development tool to create your own unique designs; (b) permit the use of the package by others, except that you may permit your third party subcontractors and agents to use the package for your internal business purposes only as described above so long as you ensure that your agents are bound by appropriate restrictions on nondisclosure of GPower's confidential information and will use the package only in accordance with the terms of this agreement; (c) modify or create derivative works of the package nor translate or port the package into any other computer or human language without the prior written consent of GPower; (d) disassemble, reverse engineer or decompile the package or otherwise attempt to discover any portion of the object or source code or trade secrets related to the package; (e) reproduce the package without GPower's copyright and trademark notices; (f) sell, lend, rent, give, assign or otherwise transfer or dispose of the package; or (g) use the package in a virtual environment to circumvent any trial period expiration or to reduce the number of purchased licenses if applicable.
+
+All modifications, adjustments, enhancements, bug fixes, error corrections or other updates to the package will become part of the package, as applicable, and will remain the exclusive property of GPower.
+
+You acknowledge that the package and any related services are provided "as is". The package's accuracy or reliability are not guaranteed, it may not be functional on any particular machine or environment, and it may be modified substantially in future releases, if any. You waive any and all claims you may have against GPower arising out of the performance or nonperformance of the package. Nothing in this agreement obligates GPower to provide any bug fix, hot fix, service pack or other update to the package. GPower disclaims all warranties relating to the package and any software and services, express or implied, including, but not limited to, any warranties against infringement of third-party rights, merchantability and fitness for a particular purpose. GPower does not warrant that the use of the package will be, or that any software is, uninterrupted or error-free.
+
+The package is not designed, manufactured or intended for use in connection with hazardous or high risk activities such as, but not limited to, applications that require fail-safe performance, applications relating to the operation of nuclear facilities, air traffic control, aerospace operations, or direct life support machines, and any other activities or applications in which the failure of the software could lead directly or indirectly  to death, personal injury, or severe physical or environmental damage. Accordingly, GPower specifically disclaim any and all express or implied warranties of fitness for high risk activities, and you agree that GPower will have no liability or responsibility relating to your use or operation of the software in connection with high risk activities.
+
+You agree to, at your expense, indemnify and hold harmless GPower from and against any and all liabilities, losses, actions, damages, or claims (including all reasonable expenses, costs, and attorneys' fees) that result from your misappropriation of any intellectual property rights contained in any software or your use of the software in connection with any high risk activities.
+
+This agreement may be terminated by GPower immediately upon notice of any breach by you of the provisions of this agreement. Upon termination, the license granted hereunder shall terminate and you shall immediately cease all use of the package. Upon any such termination, you shall immediately destroy all copies of the package, together with any and all documentation regarding the package, any other confidential information and any and all copies and extracts of the foregoing. All other terms of this agreement shall remain in effect following termination.
+
+GPower's liability is limited; By downloading, installing and/or using the package, you accept this agreement and agree that, despite any other provision of this agreement or otherwise, GPower will not be liable or obligated with respect to the subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory: (a) for any amounts in excess of the total of the fees paid to us hereunder in the twelve (12) months preceding any claim; (b) for any cost of procurement of substitute goods, technology, services or rights; or (c) for interruption of use or loss or corruption of data. Despite any other provision of this agreement, GPower shall not be liable nor obligated with respect to the subject matter of this agreement or under any contract, negligence, strict liability or other legal or equitable theory: (a) for any matter beyond our reasonable control, or (b) for any special, incidental, indirect or consequential damages, lost data or lost profits, even if we are informed of their possibility. These limitations shall apply despite the failure of the essential purpose of any limited remedy. Any actions based on or arising out of this agreement, or the software supplied hereunder, must be brought within one year of the date of entry of this agreement.
+
+*The scope of "{customer name}" is subject to an explicit definition separate to this license.
+
+License type III
+----------------
+This license file covers the GPower {package name} LabVIEW Package.
+
+Copyright (c) GPower.
+
+GPower owns all rights to this package.
+
+GPower grants to {customer name}* a non-exclusive license to use and modify this package as you see fit for any purpose permitted by law.
+
+You acknowledge that the package and any related services are provided "as is". The package's accuracy or reliability are not guaranteed, it may not be functional on any particular machine or environment, and it may be modified substantially in future releases, if any. You waive any and all claims you may have against GPower arising out of the performance or nonperformance of the package. Nothing in this agreement obligates GPower to provide any bug fix, hot fix, service pack or other update to the package. GPower disclaims all warranties relating to the package and any software and services, express or implied, including, but not limited to, any warranties against infringement of third-party rights, merchantability and fitness for a particular purpose. GPower does not warrant that the use of the package will be, or that any software is, uninterrupted or error-free.
+
+The package is not designed, manufactured or intended for use in connection with hazardous or high risk activities such as, but not limited to, applications that require fail-safe performance, applications relating to the operation of nuclear facilities, air traffic control, aerospace operations, or direct life support machines, and any other activities or applications in which the failure of the software could lead directly or indirectly to death, personal injury, or severe physical or environmental damage. Accordingly, GPower specifically disclaim any and all express or implied warranties of fitness for high risk activities, and you agree that GPower will have no liability or responsibility relating to your use or operation of the software in connection with high risk activities.
+
+You agree to, at your expense, indemnify and hold harmless GPower from and against any and all liabilities, losses, actions, damages, or claims (including all reasonable expenses, costs, and attorneys' fees) that result from your misappropriation of any intellectual property rights contained in any software or your use of the software in connection with any high risk activities.
+
+GPower's liability is limited; By downloading, installing and/or using the package, you accept this agreement and agree that, despite any other provision of this agreement or otherwise, GPower will not be liable or obligated with respect to the subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory: (a) for any amounts in excess of the total of the fees paid to us hereunder in the twelve (12) months preceding any claim; (b) for any cost of procurement of substitute goods, technology, services or rights; or (c) for interruption of use or loss or corruption of data. Despite any other provision of this agreement, GPower shall not be liable nor obligated with respect to the subject matter of this agreement or under any contract, negligence, strict liability or other legal or equitable theory: (a) for any matter beyond our reasonable control, or (b) for any special, incidental, indirect or consequential damages, lost data or lost profits, even if we are informed of their possibility. These limitations shall apply despite the failure of the essential purpose of any limited remedy. Any actions based on or arising out of this agreement, or the software supplied hereunder, must be brought within one year of the date of entry of this agreement.
+
+*The scope of "{customer name}" is subject to an explicit definition separate to this license.

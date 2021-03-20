@@ -13,6 +13,7 @@
 		<Item Name="Launch App.vi" Type="VI" URL="../Launch App.vi"/>
 		<Item Name="RootActor.lvlib" Type="Library" URL="../RootActor/RootActor.lvlib"/>
 		<Item Name="UI Controller.lvlib" Type="Library" URL="../UI Controller/UI Controller.lvlib"/>
+		<Item Name="UI Main.lvlib" Type="Library" URL="../UI Main/UI Main.lvlib"/>
 		<Item Name="UI Status.lvlib" Type="Library" URL="../UI Status/UI Status.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -43,20 +44,22 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/My Application</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/Users/kjk/LabVIEW Projects/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4B5E30F5-F0E3-4BFA-92D8-DFE0394DB963}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Application.app</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application/Application.app</Property>
+				<Property Name="Destination[0].path" Type="Path">/Users/kjk/LabVIEW Projects/builds/NI_AB_PROJECTNAME/Application.app</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application/Application.app/Contents/Resources</Property>
+				<Property Name="Destination[1].path" Type="Path">/Users/kjk/LabVIEW Projects/builds/NI_AB_PROJECTNAME/Application.app/Contents/Resources</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DCB4955F-BDF6-44C2-9201-BC5A944BC2B5}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{EA11A456-1EEE-4188-83A5-3EBD94BEE810}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Launch App.vi</Property>

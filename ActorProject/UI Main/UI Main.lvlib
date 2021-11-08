@@ -5,6 +5,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages for this Actor" Type="Folder">
+		<Item Name="Send Status Msg.lvclass" Type="LVClass" URL="../UI Main Messages/Send Status Msg/Send Status Msg.lvclass"/>
 		<Item Name="Update Sub Panel Msg.lvclass" Type="LVClass" URL="../UI Main Messages/Update Sub Panel Msg/Update Sub Panel Msg.lvclass"/>
 	</Item>
 	<Item Name="UI Main.lvclass" Type="LVClass" URL="../UI Main/UI Main.lvclass"/>

@@ -14,6 +14,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Launch App.vi" Type="VI" URL="../Launch App.vi"/>
+		<Item Name="Panel Data.ctl" Type="VI" URL="../UI Main/UI Main/Panel Data.ctl"/>
 		<Item Name="RootActor.lvlib" Type="Library" URL="../RootActor/RootActor.lvlib"/>
 		<Item Name="UI Main Startup.lvlib" Type="Library" URL="../UI Main Startup/UI Main Startup.lvlib"/>
 		<Item Name="UI Main.lvlib" Type="Library" URL="../UI Main/UI Main.lvlib"/>

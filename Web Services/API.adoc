@@ -1,0 +1,22 @@
+= THS REST API
+:toc: right
+
+== Nodes
+
+=== GET /v1/nodes
+Return all known node names
+
+JSON Reply
+[source,json]
+----
+{"Nodes":[
+    "CSgNode001","CSgNode002","CSgNode003","CSgNode004","CSgNode005","CSgNode006","CSgNode007","CSgNode008","CSgNode009","CSgNode010"
+    ]
+}
+----
+
+=== GET /v1/nodes/{node name}
+
+
+
+== Config

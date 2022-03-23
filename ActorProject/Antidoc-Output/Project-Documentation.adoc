@@ -1,0 +1,2798 @@
+= ActorProject
+Kaare <kaare@kirkegaard.org>
+:doctype: book
+:toc: left
+:imagesdir: Images
+:sectnums: 
+:toclevels: 2
+:sectanchors: 
+:sectlinks: 
+:chapter-label: Section
+
+== Project description
+
+No description found (add content in project description)
+
+== Libraries
+
+This section describes the libraries contained in the project.
+
+=== RootActor.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+.Nested libraries
+[cols="<.<1d,<.<1d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Type
+
+|<<Load SubPanel Msg.lvclass>>
+|LVClass
+
+|<<RootActor.lvclass>>
+|LVClass
+|===
+
+This library has no functions set to non private scope.
+
+=== UI Main Startup.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+.Nested libraries
+[cols="<.<1d,<.<1d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Type
+
+|<<UI Main Startup.lvclass>>
+|LVClass
+|===
+
+This library has no functions set to non private scope.
+
+=== UI Main.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+.Nested libraries
+[cols="<.<1d,<.<1d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Type
+
+|<<Update Sub Panel Msg.lvclass>>
+|LVClass
+
+|<<UI Main.lvclass>>
+|LVClass
+|===
+
+This library has no functions set to non private scope.
+
+=== UI Status.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+.Nested libraries
+[cols="<.<1d,<.<1d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Type
+
+|<<Update Status Msg.lvclass>>
+|LVClass
+
+|<<UI Status.lvclass>>
+|LVClass
+|===
+
+This library has no functions set to non private scope.
+
+=== Actor Framework.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 4.1.0.0
+
+.Nested libraries
+[cols="<.<1d,<.<1d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Type
+
+|<<Message.lvclass>>
+|LVClass
+
+|<<Stop Msg.lvclass>>
+|LVClass
+
+|<<Last Ack.lvclass>>
+|LVClass
+
+|<<Launch Nested Actor Msg.lvclass>>
+|LVClass
+
+|<<Actor.lvclass>>
+|LVClass
+
+|<<Message Priority Queue.lvclass>>
+|LVClass
+
+|<<Message Enqueuer.lvclass>>
+|LVClass
+
+|<<Message Dequeuer.lvclass>>
+|LVClass
+
+|<<Message Queue.lvclass>>
+|LVClass
+|===
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Init Actor Queues FOR TESTING ONLY
+|:imgpath: Actor_Framework.lvlib_Init_Actor_Queues_FOR_TESTING_ONLY.vi.png
+image:{imgpath}[Actor Framework.lvlib:Init Actor Queues FOR TESTING ONLY.vi]
+|+++Provides access the To-Self and To-Caller message queues for an actor without launching the actor.+++
+
+
+
++++Use this VI to test how an actor handles messages. Do not use this VI in code that you deploy.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== NI_SystemLogging.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Write to System Log
+|:imgpath: NI_SystemLogging.lvlib_Write_to_System_Log.vi.png
+image:{imgpath}[NI_SystemLogging.lvlib:Write to System Log.vi]
+|+++Writes a message to the nierrlog system log for storage and subsequent viewing.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== AF Debug.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+.Nested libraries
+[cols="<.<1d,<.<1d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Type
+
+|<<Protected Actor Handle.lvclass>>
+|LVClass
+
+|<<Ping Msg.lvclass>>
+|LVClass
+
+|<<Register Actor Msg.lvclass>>
+|LVClass
+|===
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Get Actor Handles
+|:imgpath: AF_Debug.lvlib_Get_Actor_Handles.vi.png
+image:{imgpath}[AF Debug.lvlib:Get Actor Handles.vi]
+|+++This VI returns an array of handles for currently running actors to use in a debugging tool. Actors are wrapped in handles to limit a debugger's ability to interfere with the operation of the actors and to protect the debugger from actors stopping unexpectedly.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Get Registry Update Event
+|:imgpath: AF_Debug.lvlib_Get_Registry_Update_Event.vi.png
+image:{imgpath}[AF Debug.lvlib:Get Registry Update Event.vi]
+|+++This VI returns an Event registration refnum for an Actor Framework debugger to use to hear about changes to the available debug information of actors. Every time this event fires, new information from the database is available for the debugger to harvest and display. The event itself does not carry any information to avoid duplicating information in the Event queue.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Actor Registry
+|:imgpath: AF_Debug.lvlib_Actor_Registry.vi.png
+image:{imgpath}[AF Debug.lvlib:Actor Registry.vi]
+|No description found (add content in vi description)
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Get Clone Name
+|:imgpath: AF_Debug.lvlib_Get_Clone_Name.vi.png
+image:{imgpath}[AF Debug.lvlib:Get Clone Name.vi]
+|No description found (add content in vi description)
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|TDM Registry
+|:imgpath: AF_Debug.lvlib_TDM_Registry.vi.png
+image:{imgpath}[AF Debug.lvlib:TDM Registry.vi]
+|No description found (add content in vi description)
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Custom Trace
+|:imgpath: AF_Debug.lvlib_Generate_Custom_Trace.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Custom Trace.vi]
+|+++Generates a DETT (Desktop Execution Trace Toolkit) User Generated Trace. The trace includes the source actor's ID (or debug alias, if available) and a custom message you define.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Trace for Dropped Message
+|:imgpath: AF_Debug.lvlib_Generate_Trace_for_Dropped_Message.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Trace for Dropped Message.vi]
+|+++Generates a DETT User Generated Trace for a message object that was sent to an actor but never received because the actor stopped while the message was still in its queue.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Trace for Message
+|:imgpath: AF_Debug.lvlib_Generate_Trace_for_Message.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Trace for Message.vi]
+|+++Generates a DETT User Generated Trace for a message object being sent.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Trace for New Actor
+|:imgpath: AF_Debug.lvlib_Generate_Trace_for_New_Actor.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Trace for New Actor.vi]
+|+++Generates a DETT User Generated Trace for an actor being newly launched.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Trace for New Time Delayed Message
+|:imgpath: AF_Debug.lvlib_Generate_Trace_for_New_Time_Delayed_Message.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Trace for New Time Delayed Message.vi]
+|+++Generates a DETT User Generated Trace for a time-delayed message being created.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Trace for Received Message
+|:imgpath: AF_Debug.lvlib_Generate_Trace_for_Received_Message.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Trace for Received Message.vi]
+|+++Generates a DETT User Generated Trace for a message object being received by an actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Trace for Skipped Time-Delayed Message
+|:imgpath: AF_Debug.lvlib_Generate_Trace_for_Skipped_Time_Delayed_Message.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Trace for Skipped Time-Delayed Message.vi]
+|+++Generates a DETT User Generated Trace for a repeated time-delayed message deliberately skipping one of its instances.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Trace for Stopped Actor
+|:imgpath: AF_Debug.lvlib_Generate_Trace_for_Stopped_Actor.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Trace for Stopped Actor.vi]
+|+++Generates a DETT User Generated Trace for an actor stopping, whether in response to the Stop Msg or an error or its normal termination.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Generate Trace for Stopped Time-Delayed Message
+|:imgpath: AF_Debug.lvlib_Generate_Trace_for_Stopped_Time_Delayed_Message.vi.png
+image:{imgpath}[AF Debug.lvlib:Generate Trace for Stopped Time-Delayed Message.vi]
+|+++Generates a DETT User Generated Trace for a time-delayed message transmitting its final iteration.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+== Classes
+
+This section describes the classes contained in the project.
+
+=== Classes overview
+
+This project contains 19 classes and 0 interface.
+
+.Classes list
+[cols="<.<1d,<.<1d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Classes|Interfaces
+
+|<<Load SubPanel Msg.lvclass>>
+|
+
+|<<RootActor.lvclass>>
+|
+
+|<<UI Main Startup.lvclass>>
+|
+
+|<<Update Sub Panel Msg.lvclass>>
+|
+
+|<<UI Main.lvclass>>
+|
+
+|<<Update Status Msg.lvclass>>
+|
+
+|<<UI Status.lvclass>>
+|
+
+|<<Message.lvclass>>
+|
+
+|<<Stop Msg.lvclass>>
+|
+
+|<<Last Ack.lvclass>>
+|
+
+|<<Launch Nested Actor Msg.lvclass>>
+|
+
+|<<Actor.lvclass>>
+|
+
+|<<Message Priority Queue.lvclass>>
+|
+
+|<<Message Enqueuer.lvclass>>
+|
+
+|<<Message Dequeuer.lvclass>>
+|
+
+|<<Message Queue.lvclass>>
+|
+
+|<<Protected Actor Handle.lvclass>>
+|
+
+|<<Ping Msg.lvclass>>
+|
+
+|<<Register Actor Msg.lvclass>>
+|
+|===
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "RootActor.lvlib:Load SubPanel Msg" {
+{field} -Clone Name : String
+{static} {method} +Send Load SubPanel()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "RootActor.lvlib:Load SubPanel Msg"
+
+
+class "RootActor.lvlib:RootActor" {
+{field} -User Events : Cluster
+{field} -Status Actor Enqueuer : LV Class
+{static} {method} +Load SubPanel()
+{method} #Actor Core()
+{method} #Pre Launch Init()
+{method} #Stop Core()
+
+}
+"Actor Framework.lvlib:Actor" <|-- "RootActor.lvlib:RootActor"
+"RootActor.lvlib:RootActor" *-- "Message Enqueuer"
+
+
+class "UI Main Startup.lvlib:UI Main Startup" {
+{method} #Actor Core()
+
+}
+"Actor Framework.lvlib:Actor" <|-- "UI Main Startup.lvlib:UI Main Startup"
+
+
+class "UI Main.lvlib:Update Sub Panel Msg" {
+{field} -Clone Name : String
+{field} -UI Section : String
+{static} {method} +Send Update Sub Panel()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "UI Main.lvlib:Update Sub Panel Msg"
+
+
+class "UI Main.lvlib:UI Main" {
+{field} -Status Actor Enqueuer : LV Class
+{field} -User Events : Cluster
+{field} -Main Actor Enqueuer : LV Class
+{method} #Actor Core()
+{method} #Pre Launch Init()
+{method} #Stop Core()
+{method} +Update Sub Panel()
+
+}
+"Actor Framework.lvlib:Actor" <|-- "UI Main.lvlib:UI Main"
+"UI Main.lvlib:UI Main" *-- "Message Enqueuer"
+
+
+class "UI Status.lvlib:Update Status Msg" {
+{field} -Status : String
+{static} {method} +Send Update Status()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "UI Status.lvlib:Update Status Msg"
+
+
+class "UI Status.lvlib:UI Status" {
+{field} -User Events : Cluster
+{static} {method} +Update Status()
+{method} #Actor Core()
+{method} #Pre Launch Init()
+{method} #Stop Core()
+
+}
+"Actor Framework.lvlib:Actor" <|-- "UI Status.lvlib:UI Status"
+
+
+class "Actor Framework.lvlib:Message" {
+{static} {method} ~Drop Message()
+{method} #Drop Message Core()
+{method} +Do()
+
+}
+
+
+class "Actor Framework.lvlib:Stop Msg" {
+{field} -is emergency? : Boolean
+{static} {method} +Send Normal Stop()
+{static} {method} +Send Emergency Stop()
+{static} {method} +Send Normal or Emergency Stop()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "Actor Framework.lvlib:Stop Msg"
+
+
+class "Actor Framework.lvlib:Last Ack" {
+{field} -error report : Error Cluster
+{field} +Actor : LV Class
+{field} -Caller-to-Actor Enqueuer : LV Class
+{static} {method} ~Send Last Ack()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "Actor Framework.lvlib:Last Ack"
+"Actor Framework.lvlib:Last Ack" *-- "Actor"
+"Actor Framework.lvlib:Last Ack" *-- "Message Enqueuer"
+
+
+class "Actor Framework.lvlib:Launch Nested Actor Msg" {
+{field} -Nested Actor : LV Class
+{field} -Open Actor Core front panel? : Boolean
+{field} -Auto-stop? : Boolean
+{field} -Debug Alias : String
+{static} {method} -Initialize()
+{method} -Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "Actor Framework.lvlib:Launch Nested Actor Msg"
+"Actor Framework.lvlib:Launch Nested Actor Msg" *-- "Actor"
+
+
+class "Actor Framework.lvlib:Actor" {
+{field} -Self-To-Caller Enqueuer : LV Class
+{field} -Send-To-Self Enqueuer : LV Class
+{field} -Nested Actors : Array of LV Class
+{static} {method} -Actor()
+{static} {method} -Record Nested Actor()
+{static} {method} -Stop()
+{static} {method} -Count Actors()
+{static} {method} -Launch Actor Core()
+{static} {method} #Send Launch Nested Actor Msg()
+{static} {method} #Launch Nested Actor()
+{static} {method} ~Handle Last Ack()
+{static} {method} ~Init Check()
+{static} {method} ~Init Queues()
+{static} {method} ~Launch Nested Actor Friend Wrapper()
+{static} {method} +Launch Actor()
+{static} {method} +Launch Root Actor()
+{method} #Actor Core()
+{method} #Stop Core()
+{method} #Handle Last Ack Core()
+{method} #Receive Message()
+{method} #Handle Error()
+{method} #Pre Launch Init()
+{method} #Substitute Actor()
+
+}
+"Actor Framework.lvlib:Actor" *-- "Message Enqueuer"
+"Actor Framework.lvlib:Actor" *-- "Message Priority Queue"
+
+"Actor Framework.lvlib:Actor" o-- "Message Enqueuer"
+
+class "Actor Framework.lvlib:Message Priority Queue" {
+{field} -priority queue : NoType
+{static} {method} -Dequeue Timed Out()
+{static} {method} -Obtain Priority Queue()
+{static} {method} -Priority Enqueue()
+{static} {method} -Priority Dequeue()
+{static} {method} -Flush()
+{static} {method} -Release Priority Queue()
+
+}
+
+
+class "Actor Framework.lvlib:Message Enqueuer" {
+{field} -Priority Queue : LV Class
+{static} {method} ~Init from Existing Queue()
+{static} {method} ~Enqueue Critical()
+{static} {method} +Enqueue()
+{static} {method} +Equals Not A Refnum()
+
+}
+"Actor Framework.lvlib:Message Enqueuer" *-- "Message Priority Queue"
+
+
+class "Actor Framework.lvlib:Message Dequeuer" {
+{field} -Priority Queue : LV Class
+{static} {method} ~Init from Existing Queue()
+{static} {method} +Dequeue()
+{static} {method} +Equals Not A Refnum()
+
+}
+"Actor Framework.lvlib:Message Dequeuer" *-- "Message Priority Queue"
+
+
+class "Actor Framework.lvlib:Message Queue" {
+{field} -Message Enqueuer : LV Class
+{field} -Message Dequeuer : LV Class
+{field} -Message Priority Queue : LV Class
+{static} {method} +Obtain Message Queue()
+{static} {method} +Release Message Queue()
+
+}
+"Actor Framework.lvlib:Message Queue" *-- "Message Enqueuer"
+"Actor Framework.lvlib:Message Queue" *-- "Message Dequeuer"
+"Actor Framework.lvlib:Message Queue" *-- "Message Priority Queue"
+
+
+class "AF Debug.lvlib:Protected Actor Handle" {
+{field} -Enqueuer : LV Class
+{field} -ID : String
+{field} -Caller ID : String
+{field} -Qualified Name : String
+{field} -Actor Core Name : String
+{field} -Alias : String
+{static} {method} +Create()
+{static} {method} +Emergency Stop()
+{static} {method} +Open Block Diagram()
+{static} {method} +Open Front Panel()
+{static} {method} +Ping()
+{static} {method} +Stop()
+
+}
+"AF Debug.lvlib:Protected Actor Handle" *-- "Message Enqueuer"
+
+
+class "AF Debug.lvlib:Ping Msg" {
+{field} -Reply Queue : NoType
+{static} {method} +Send Ping()
+{method} +Do()
+{method} #Drop Message Core()
+
+}
+"Actor Framework.lvlib:Message" <|-- "AF Debug.lvlib:Ping Msg"
+
+
+class "AF Debug.lvlib:Register Actor Msg" {
+{field} -Actor Enqueuer : LV Class
+{field} -Debug Alias : String
+{field} -Details : Cluster
+{static} {method} -Send Register Actor()
+{method} -Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "AF Debug.lvlib:Register Actor Msg"
+"AF Debug.lvlib:Register Actor Msg" *-- "Message Enqueuer"
+
+
+
+@enduml
+....
+
+=== Load SubPanel Msg.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "RootActor.lvlib:Load SubPanel Msg" {
+{field} -Clone Name : String
+{static} {method} +Send Load SubPanel()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "RootActor.lvlib:Load SubPanel Msg"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Send Load SubPanel
+|:imgpath: RootActor.lvlib_Load_SubPanel_Msg.lvclass_Send_Load_SubPanel.vi.png
+image:{imgpath}[RootActor.lvlib:Load SubPanel Msg.lvclass:Send Load SubPanel.vi]
+|+++This VI sends the message to an actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Do
+|:imgpath: RootActor.lvlib_Load_SubPanel_Msg.lvclass_Do.vi.png
+image:{imgpath}[RootActor.lvlib:Load SubPanel Msg.lvclass:Do.vi]
+|+++This VI delivers the message to the actor by calling the appropriate method(s) on the actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== RootActor.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.5
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "RootActor.lvlib:RootActor" {
+{field} -User Events : Cluster
+{field} -Status Actor Enqueuer : LV Class
+{static} {method} +Load SubPanel()
+{method} #Actor Core()
+{method} #Pre Launch Init()
+{method} #Stop Core()
+
+}
+"Actor Framework.lvlib:Actor" <|-- "RootActor.lvlib:RootActor"
+"RootActor.lvlib:RootActor" *-- "Message Enqueuer"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Actor Core
+|:imgpath: RootActor.lvlib_RootActor.lvclass_Actor_Core.vi.png
+image:{imgpath}[RootActor.lvlib:RootActor.lvclass:Actor Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Actor Core.vi)+++
+
+
+
++++Receives messages to the actor, reacts to them, and initiates any error handling that may shut the actor down.+++
+
+
+
++++Descendant classes may override this VI to append parallel tasks for the actor to complete while it handles messages. Overrides use the Call Parent Class Method node.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Pre Launch Init
+|:imgpath: RootActor.lvlib_RootActor.lvclass_Pre_Launch_Init.vi.png
+image:{imgpath}[RootActor.lvlib:RootActor.lvclass:Pre Launch Init.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Pre Launch Init.vi)+++
+
+
+
++++Defines behavior that occurs after the  Launch Nested Actor method is invoked but before the actor's Actor Core method begins running.+++
+
+
+
++++By default, this method does nothing. A descendant class may override it to define behavior.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Stop Core
+|:imgpath: RootActor.lvlib_RootActor.lvclass_Stop_Core.vi.png
+image:{imgpath}[RootActor.lvlib:RootActor.lvclass:Stop Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Stop Core.vi)+++
+
+
+
++++Defines what the actor does before it stops. Use the <B>final error code</B> input to determine whether the actor shut down in response to an error.+++
+
+
+
++++By default, this method passes the Stop message along to all auto-stop nested actors. A descendant class may override this method to define additional behavior, such as shutting down any processes the actor initiated in its override of the Actor Core method.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Load SubPanel
+|:imgpath: RootActor.lvlib_RootActor.lvclass_Load_SubPanel.vi.png
+image:{imgpath}[RootActor.lvlib:RootActor.lvclass:Load SubPanel.vi]
+|No description found (add content in vi description)
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== UI Main Startup.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "UI Main Startup.lvlib:UI Main Startup" {
+{method} #Actor Core()
+
+}
+"Actor Framework.lvlib:Actor" <|-- "UI Main Startup.lvlib:UI Main Startup"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Actor Core
+|:imgpath: UI_Main_Startup.lvlib_UI_Main_Startup.lvclass_Actor_Core.vi.png
+image:{imgpath}[UI Main Startup.lvlib:UI Main Startup.lvclass:Actor Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Actor Core.vi)+++
+
+
+
++++Receives messages to the actor, reacts to them, and initiates any error handling that may shut the actor down.+++
+
+
+
++++Descendant classes may override this VI to append parallel tasks for the actor to complete while it handles messages. Overrides use the Call Parent Class Method node.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Update Sub Panel Msg.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.1
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "UI Main.lvlib:Update Sub Panel Msg" {
+{field} -Clone Name : String
+{field} -UI Section : String
+{static} {method} +Send Update Sub Panel()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "UI Main.lvlib:Update Sub Panel Msg"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Send Update Sub Panel
+|:imgpath: UI_Main.lvlib_Update_Sub_Panel_Msg.lvclass_Send_Update_Sub_Panel.vi.png
+image:{imgpath}[UI Main.lvlib:Update Sub Panel Msg.lvclass:Send Update Sub Panel.vi]
+|+++This VI sends the message to an actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Do
+|:imgpath: UI_Main.lvlib_Update_Sub_Panel_Msg.lvclass_Do.vi.png
+image:{imgpath}[UI Main.lvlib:Update Sub Panel Msg.lvclass:Do.vi]
+|+++This VI delivers the message to the actor by calling the appropriate method(s) on the actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== UI Main.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.4
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "UI Main.lvlib:UI Main" {
+{field} -Status Actor Enqueuer : LV Class
+{field} -User Events : Cluster
+{field} -Main Actor Enqueuer : LV Class
+{method} #Actor Core()
+{method} #Pre Launch Init()
+{method} #Stop Core()
+{method} +Update Sub Panel()
+
+}
+"Actor Framework.lvlib:Actor" <|-- "UI Main.lvlib:UI Main"
+"UI Main.lvlib:UI Main" *-- "Message Enqueuer"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Actor Core
+|:imgpath: UI_Main.lvlib_UI_Main.lvclass_Actor_Core.vi.png
+image:{imgpath}[UI Main.lvlib:UI Main.lvclass:Actor Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Actor Core.vi)+++
+
+
+
++++Receives messages to the actor, reacts to them, and initiates any error handling that may shut the actor down.+++
+
+
+
++++Descendant classes may override this VI to append parallel tasks for the actor to complete while it handles messages. Overrides use the Call Parent Class Method node.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Pre Launch Init
+|:imgpath: UI_Main.lvlib_UI_Main.lvclass_Pre_Launch_Init.vi.png
+image:{imgpath}[UI Main.lvlib:UI Main.lvclass:Pre Launch Init.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Pre Launch Init.vi)+++
+
+
+
++++Defines behavior that occurs after the  Launch Nested Actor method is invoked but before the actor's Actor Core method begins running.+++
+
+
+
++++By default, this method does nothing. A descendant class may override it to define behavior.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Stop Core
+|:imgpath: UI_Main.lvlib_UI_Main.lvclass_Stop_Core.vi.png
+image:{imgpath}[UI Main.lvlib:UI Main.lvclass:Stop Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Stop Core.vi)+++
+
+
+
++++Defines what the actor does before it stops. Use the <B>final error code</B> input to determine whether the actor shut down in response to an error.+++
+
+
+
++++By default, this method passes the Stop message along to all auto-stop nested actors. A descendant class may override this method to define additional behavior, such as shutting down any processes the actor initiated in its override of the Actor Core method.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Update Sub Panel
+|:imgpath: UI_Main.lvlib_UI_Main.lvclass_Update_Sub_Panel.vi.png
+image:{imgpath}[UI Main.lvlib:UI Main.lvclass:Update Sub Panel.vi]
+|+++Send user event to update the sub panel.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Update Status Msg.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "UI Status.lvlib:Update Status Msg" {
+{field} -Status : String
+{static} {method} +Send Update Status()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "UI Status.lvlib:Update Status Msg"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Send Update Status
+|:imgpath: UI_Status.lvlib_Update_Status_Msg.lvclass_Send_Update_Status.vi.png
+image:{imgpath}[UI Status.lvlib:Update Status Msg.lvclass:Send Update Status.vi]
+|+++This VI sends the message to an actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Do
+|:imgpath: UI_Status.lvlib_Update_Status_Msg.lvclass_Do.vi.png
+image:{imgpath}[UI Status.lvlib:Update Status Msg.lvclass:Do.vi]
+|+++This VI delivers the message to the actor by calling the appropriate method(s) on the actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== UI Status.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.2
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "UI Status.lvlib:UI Status" {
+{field} -User Events : Cluster
+{static} {method} +Update Status()
+{method} #Actor Core()
+{method} #Pre Launch Init()
+{method} #Stop Core()
+
+}
+"Actor Framework.lvlib:Actor" <|-- "UI Status.lvlib:UI Status"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Actor Core
+|:imgpath: UI_Status.lvlib_UI_Status.lvclass_Actor_Core.vi.png
+image:{imgpath}[UI Status.lvlib:UI Status.lvclass:Actor Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Actor Core.vi)+++
+
+
+
++++Receives messages to the actor, reacts to them, and initiates any error handling that may shut the actor down.+++
+
+
+
++++Descendant classes may override this VI to append parallel tasks for the actor to complete while it handles messages. Overrides use the Call Parent Class Method node.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Pre Launch Init
+|:imgpath: UI_Status.lvlib_UI_Status.lvclass_Pre_Launch_Init.vi.png
+image:{imgpath}[UI Status.lvlib:UI Status.lvclass:Pre Launch Init.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Pre Launch Init.vi)+++
+
+
+
++++Defines behavior that occurs after the  Launch Nested Actor method is invoked but before the actor's Actor Core method begins running.+++
+
+
+
++++By default, this method does nothing. A descendant class may override it to define behavior.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Stop Core
+|:imgpath: UI_Status.lvlib_UI_Status.lvclass_Stop_Core.vi.png
+image:{imgpath}[UI Status.lvlib:UI Status.lvclass:Stop Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Stop Core.vi)+++
+
+
+
++++Defines what the actor does before it stops. Use the <B>final error code</B> input to determine whether the actor shut down in response to an error.+++
+
+
+
++++By default, this method passes the Stop message along to all auto-stop nested actors. A descendant class may override this method to define additional behavior, such as shutting down any processes the actor initiated in its override of the Actor Core method.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Update Status
+|:imgpath: UI_Status.lvlib_UI_Status.lvclass_Update_Status.vi.png
+image:{imgpath}[UI Status.lvlib:UI Status.lvclass:Update Status.vi]
+|No description found (add content in vi description)
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Message.lvclass
+
+*Responsibility:*
++++Message: <Any Actor> to <Any Actor>+++
+
++++This is the ancestor of all messages. Messages are sent via directed queue from the caller to the actor or via a separate queue from the actor to the caller. In general, messages should be events along the lines of "you need to know this." They should not, generally, be synchronous requests for information of any kind. For further discussion of this, see comments on "Reply Message.lvclass".+++
+
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Message" {
+{static} {method} ~Drop Message()
+{method} #Drop Message Core()
+{method} +Do()
+
+}
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Drop Message
+|:imgpath: Actor_Framework.lvlib_Message.lvclass_Drop_Message.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message.lvclass:Drop Message.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message.lvclass:Drop Message.vi)+++
+
++++Wrapper for Drop Message Core.vi+++
+
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Drop Message Core
+|:imgpath: Actor_Framework.lvlib_Message.lvclass_Drop_Message_Core.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message.lvclass:Drop Message Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message.lvclass:Drop Message Core.vi)+++
+
+
+
++++Defines what a message does if it is in the message queue when the queue is released. At this point, the actor has shut down, so it will never process the message.+++
+
+
+
++++By default, this method does nothing. A child class may override it to define behavior. National Instruments provides the Reply Msg class to override this method. This class releases its internal queue, which causes any caller of the Send Message and Wait For Response method to stop waiting and return an error.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Do
+|:imgpath: Actor_Framework.lvlib_Message.lvclass_Do.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message.lvclass:Do.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message.lvclass:Do.vi)+++
+
+
+
++++Defines what a message does when it is received by an actor. Generally, a message instructs an actor to invoke one of its methods. By default, this method does nothing. A child class must override it to define behavior.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Stop Msg.lvclass
+
+*Responsibility:*
++++Message: Actor to Actor+++
+
++++When the Stop message is sent, it tells the actor to shutdown. The actor will stop handling further messages. The actor will send a Last Ack.lvclass message back on the queue to its caller. After sending the Stop message, the caller is free to exit and not wait for the Last Ack. +++
+
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Stop Msg" {
+{field} -is emergency? : Boolean
+{static} {method} +Send Normal Stop()
+{static} {method} +Send Emergency Stop()
+{static} {method} +Send Normal or Emergency Stop()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "Actor Framework.lvlib:Stop Msg"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Send Normal Stop
+|:imgpath: Actor_Framework.lvlib_Stop_Msg.lvclass_Send_Normal_Stop.vi.png
+image:{imgpath}[Actor Framework.lvlib:Stop Msg.lvclass:Send Normal Stop.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Stop Msg.lvclass:Send Normal Stop.vi)+++
+
+
+
++++Sends a Stop message to an actor, triggering the actor to run its Stop Core method. This message has normal priority, meaning the actor will process this message after processing high- or normal-priority messages that are in the queue already.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Send Emergency Stop
+|:imgpath: Actor_Framework.lvlib_Stop_Msg.lvclass_Send_Emergency_Stop.vi.png
+image:{imgpath}[Actor Framework.lvlib:Stop Msg.lvclass:Send Emergency Stop.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Stop Msg.lvclass:Send Emergency Stop.vi)+++
+
+
+
++++Sends an Emergency Stop message to an actor, triggering the actor to shut down as quickly as possible. This message has critical priority, meaning it will be processed before all messages that are already in the queue.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Send Normal or Emergency Stop
+|:imgpath: Actor_Framework.lvlib_Stop_Msg.lvclass_Send_Normal_or_Emergency_Stop.vi.png
+image:{imgpath}[Actor Framework.lvlib:Stop Msg.lvclass:Send Normal or Emergency Stop.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Stop Msg.lvclass:Send Normal or Emergency Stop.vi)+++
+
+
+
++++Sends a Stop message to an actor. The priority of this message is determined by the value of the <B>final error code</B> input. If this input is 0, this VI sends the message with normal priority; otherwise, it sends the message with critical priority.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Do
+|:imgpath: Actor_Framework.lvlib_Stop_Msg.lvclass_Do.vi.png
+image:{imgpath}[Actor Framework.lvlib:Stop Msg.lvclass:Do.vi]
+|No description found (add content in vi description)
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Last Ack.lvclass
+
+*Responsibility:*
++++Message: Actor to Actor+++
+
++++Last Ack stands for "Last Acknowledgement". It is a common term in network communication protocols signifying the very very last message when breaking a connection. In this case, a Last Ack message is sent from the actor to the caller whenever the actor shuts down. This shutdown may be because the actor has finished the work it was created to do, or because it generated an error, or because it received a Stop message. If it was because of an error, the error is recoreded in the Last Ack. The final state of the actor as it exited is also recorded in the Last Ack. The caller may legitimately already have quit when the Last Ack is sent, so any error generated while sending the Last Ack is ignored.+++
+
+
+*Version:* 1.0.0.1
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Last Ack" {
+{field} -error report : Error Cluster
+{field} +Actor : LV Class
+{field} -Caller-to-Actor Enqueuer : LV Class
+{static} {method} ~Send Last Ack()
+{method} +Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "Actor Framework.lvlib:Last Ack"
+"Actor Framework.lvlib:Last Ack" *-- "Actor"
+"Actor Framework.lvlib:Last Ack" *-- "Message Enqueuer"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Send Last Ack
+|:imgpath: Actor_Framework.lvlib_Last_Ack.lvclass_Send_Last_Ack.vi.png
+image:{imgpath}[Actor Framework.lvlib:Last Ack.lvclass:Send Last Ack.vi]
+|No description found (add content in vi description)
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Do
+|:imgpath: Actor_Framework.lvlib_Last_Ack.lvclass_Do.vi.png
+image:{imgpath}[Actor Framework.lvlib:Last Ack.lvclass:Do.vi]
+|No description found (add content in vi description)
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Read Actor
+|:imgpath: Actor_Framework.lvlib_Last_Ack.lvclass_Read_Actor.vi.png
+image:{imgpath}[Actor Framework.lvlib:Last Ack.lvclass:Read Actor.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Last Ack.lvclass:Read Actor.vi)+++
+
+
+
++++Returns the state the actor was in when it shut down.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Read Error Report
+|:imgpath: Actor_Framework.lvlib_Last_Ack.lvclass_Read_Error_Report.vi.png
+image:{imgpath}[Actor Framework.lvlib:Last Ack.lvclass:Read Error Report.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Last Ack.lvclass:Read Error Report.vi)+++
+
+
+
++++Returns the error, if any, that caused an actor to shut down.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Read Caller-To-Actor Enqueuer
+|:imgpath: Actor_Framework.lvlib_Last_Ack.lvclass_Read_Caller_To_Actor_Enqueuer.vi.png
+image:{imgpath}[Actor Framework.lvlib:Last Ack.lvclass:Read Caller-To-Actor Enqueuer.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Last Ack.lvclass:Read Caller-To-Actor Enqueuer.vi)+++
+
+
+
++++Returns the reference the caller used to send messages to the actor. Although the reference is invalid, you can use it to identify which actor shut down.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Launch Nested Actor Msg.lvclass
+
+*Responsibility:*
++++Message: Actor to Actor+++
+
++++Launch Nested Actor Msg is a private message of the Actor Framework. Unlike most message classes, it does not have a member VI for sending the message. The send for this message is instead a member of Actor.lvclass. For further information, please read the help for <b>Actor.lvclass:Send Launch Nested Actor Msg.vi</b>.+++
+
+
+*Version:* 1.0.0.4
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Launch Nested Actor Msg" {
+{field} -Nested Actor : LV Class
+{field} -Open Actor Core front panel? : Boolean
+{field} -Auto-stop? : Boolean
+{field} -Debug Alias : String
+{static} {method} -Initialize()
+{method} -Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "Actor Framework.lvlib:Launch Nested Actor Msg"
+"Actor Framework.lvlib:Launch Nested Actor Msg" *-- "Actor"
+
+
+
+@enduml
+....
+
+This library has no functions set to non private scope.
+
+=== Actor.lvclass
+
+*Responsibility:*
++++This class serves as the base class for an independently running actor. The caller VI launches the actor using Launch Actor.vi and thereafter communicates with the actor using a pair of queues -- one for messages to the actor, the other for messages from the actor. These messages are all derived from the Message.lvclass.  Actor.lvclass provides mechanism for launching and establishing communications. In general, a programmer will create new classes that inherit from Actor.lvclass that are dedicated to specific purposes. +++
+
+
+*Version:* 1.0.0.5
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Actor" {
+{field} -Self-To-Caller Enqueuer : LV Class
+{field} -Send-To-Self Enqueuer : LV Class
+{field} -Nested Actors : Array of LV Class
+{static} {method} -Actor()
+{static} {method} -Record Nested Actor()
+{static} {method} -Stop()
+{static} {method} -Count Actors()
+{static} {method} -Launch Actor Core()
+{static} {method} #Send Launch Nested Actor Msg()
+{static} {method} #Launch Nested Actor()
+{static} {method} ~Handle Last Ack()
+{static} {method} ~Init Check()
+{static} {method} ~Init Queues()
+{static} {method} ~Launch Nested Actor Friend Wrapper()
+{static} {method} +Launch Actor()
+{static} {method} +Launch Root Actor()
+{method} #Actor Core()
+{method} #Stop Core()
+{method} #Handle Last Ack Core()
+{method} #Receive Message()
+{method} #Handle Error()
+{method} #Pre Launch Init()
+{method} #Substitute Actor()
+
+}
+"Actor Framework.lvlib:Actor" *-- "Message Enqueuer"
+"Actor Framework.lvlib:Actor" *-- "Message Priority Queue"
+
+"Actor Framework.lvlib:Actor" o-- "Message Enqueuer"
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Actor Core
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Actor_Core.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Actor Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Actor Core.vi)+++
+
+
+
++++Receives messages to the actor, reacts to them, and initiates any error handling that may shut the actor down.+++
+
+
+
++++Descendant classes may override this VI to append parallel tasks for the actor to complete while it handles messages. Overrides use the Call Parent Class Method node.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Stop Core
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Stop_Core.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Stop Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Stop Core.vi)+++
+
+
+
++++Defines what the actor does before it stops. Use the <B>final error code</B> input to determine whether the actor shut down in response to an error.+++
+
+
+
++++By default, this method passes the Stop message along to all auto-stop nested actors. A descendant class may override this method to define additional behavior, such as shutting down any processes the actor initiated in its override of the Actor Core method.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Handle Last Ack Core
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Handle_Last_Ack_Core.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Handle Last Ack Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Handle Last Ack Core.vi)+++
+
+
+
++++Defines how the caller actor responds to the Last Ack message from a nested actor. The Last Ack message is the final message a nested actor sends to its caller before it shuts down. The message contains information about the final state of the nested actor.+++
+
+
+
++++By default, this method does nothing except return any error the nested actor sent. A descendant class may override this method to define behavior.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Read Self Enqueuer
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Read_Self_Enqueuer.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Read Self Enqueuer.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Read Self Enqueuer.vi)+++
+
+
+
++++Returns the reference needed for the actor to send messages to itself.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Read Caller Enqueuer
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Read_Caller_Enqueuer.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Read Caller Enqueuer.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Read Caller Enqueuer.vi)+++
+
+
+
++++Returns the reference the actor needs to send messages to its caller.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Read Autostop Nested Actor Count
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Read_Autostop_Nested_Actor_Count.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Read Autostop Nested Actor Count.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Read Autostop Nested Actor Count.vi)+++
+
+
+
++++Returns the number of auto-stop nested actors that were launched by an actor but have not yet sent back their Last Ack messages. Use this VI to detect whether all nested actors have finished working.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Receive Message
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Receive_Message.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Receive Message.vi]
+|+++This VI should be overriden ONLY if you are creating a proxy actor for remote transmission. If you are, override this VI to transmit the received message to a new destination, maintaining the given priority.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Handle Error
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Handle_Error.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Handle Error.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Handle Error.vi)+++
+
+
+
++++Defines how the actor handles an error that occurred while processing a message. By default, this method does nothing except stop the actor.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Pre Launch Init
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Pre_Launch_Init.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Pre Launch Init.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Pre Launch Init.vi)+++
+
+
+
++++Defines behavior that occurs after the  Launch Nested Actor method is invoked but before the actor's Actor Core method begins running.+++
+
+
+
++++By default, this method does nothing. A descendant class may override it to define behavior.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Substitute Actor
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Substitute_Actor.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Substitute Actor.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Substitute Actor.vi)+++
+
++++This method copies information from the <b>Current Actor</b> to the <b>Substitute Actor</b>, including the to-self and the to-caller queue references. The purpose of this function is to allow an actor to define a method that replaces itself with another actor, useful for implementing a State Pattern Actor. Child classes should override this method to copy any additional fields that they need from the current to the substitute.+++
+
++++This method may return error code 678010: Illegal substitution. Overrides of this method may choose to return this error if the new actor is not one that is an appropriate substitute for the current actor, for whatever standards of "appropriate" are chosen for the current actor. If returning an error, override VIs should return the unmodified <b>Current Actor</b> as <b>Substitute Actor out</b>.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Send Launch Nested Actor Msg
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Send_Launch_Nested_Actor_Msg.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Send Launch Nested Actor Msg.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Send Launch Nested Actor Msg.vi)+++
+
+
+
++++This VI sends a message containing an actor to another actor. The actor receiving the message will launch the payload actor as a nested actor. Use this VI only to send a message from an actor to itself.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Launch Nested Actor
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Launch_Nested_Actor.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Launch Nested Actor.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Launch Nested Actor.vi)+++
+
+
+
++++Launches an asynchronously running VI that performs tasks and handles messages for the <B>Nested Actor</B>. Use this VI to launch actors that are dependent on one or more calling actors. This VI returns a reference to the enqueuer that you can use to send messages to the newly launched actor.+++
+
+
+
++++This VI requires the <B>Caller Actor in</B> input to call the <B>Nested Actor</B>. This VI will return an error if the <B>Caller Actor in</B> has not already been launched itself. Use the Launch Root Actor VI for launching an actor without a caller.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Handle Last Ack
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Handle_Last_Ack.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Handle Last Ack.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Handle Last Ack.vi)+++
+
++++This VI is a wrapper around Handle Last Ack Core.vi. This wrapper is invoked by the Do method of the Last Ack class.+++
+
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Init Check
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Init_Check.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Init Check.vi]
+|No description found (add content in vi description)
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Init Queues
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Init_Queues.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Init Queues.vi]
+|No description found (add content in vi description)
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Launch Nested Actor Friend Wrapper
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Launch_Nested_Actor_Friend_Wrapper.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Launch Nested Actor Friend Wrapper.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Launch Nested Actor Friend Wrapper.vi)+++
+
+
+
++++This VI is a community-scoped wrapper around Actor Framework.lvlib:Actor.lvclass:Launch Nested Actor.vi. It is a behind-the-scenes component of the Actor Framework.+++
+
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Launch Actor
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Launch_Actor.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Launch Actor.vi]
+|+++LabVIEW no longer supports this VI. Use the Actor:Launch Root Actor VI or Actor:Launch Nested Actor VI instead.+++
++++Launches a top-level VI that handles messages for an actor and starts this actor's tasks. This VI returns a reference to the queue you use to send messages to the actor.+++
+
++++This VI requires the <B>Actor-to-Caller Enqueuer</B> input, which is the reference that allows the launched actor to communicate with the caller. If you are launching the top-level actor, use the Read Enqueuer method to obtain this reference. If you are launching a nested actor, use the Read Self Enqueuer method instead.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Launch Root Actor
+|:imgpath: Actor_Framework.lvlib_Actor.lvclass_Launch_Root_Actor.vi.png
+image:{imgpath}[Actor Framework.lvlib:Actor.lvclass:Launch Root Actor.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Actor.lvclass:Launch Root Actor.vi)+++
+
+
+
++++Launches an asynchronously running VI that performs tasks and handles messages for the <B>Actor</B>. This VI returns a reference to an enqueuer that you can use to send messages to the newly launched actor.+++
+
+
+
++++The Launch Root Actor VI launches the <B>Actor</B> without a caller. Use this VI to launch the root actor of the actor tree. Use the Launch Nested Actor VI to launch all other actors.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Message Priority Queue.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.1
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Message Priority Queue" {
+{field} -priority queue : NoType
+{static} {method} -Dequeue Timed Out()
+{static} {method} -Obtain Priority Queue()
+{static} {method} -Priority Enqueue()
+{static} {method} -Priority Dequeue()
+{static} {method} -Flush()
+{static} {method} -Release Priority Queue()
+
+}
+
+
+
+@enduml
+....
+
+This library has no functions set to non private scope.
+
+=== Message Enqueuer.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Message Enqueuer" {
+{field} -Priority Queue : LV Class
+{static} {method} ~Init from Existing Queue()
+{static} {method} ~Enqueue Critical()
+{static} {method} +Enqueue()
+{static} {method} +Equals Not A Refnum()
+
+}
+"Actor Framework.lvlib:Message Enqueuer" *-- "Message Priority Queue"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Init from Existing Queue
+|:imgpath: Actor_Framework.lvlib_Message_Enqueuer.lvclass_Init_from_Existing_Queue.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Enqueuer.lvclass:Init from Existing Queue.vi]
+|No description found (add content in vi description)
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Enqueue Critical
+|:imgpath: Actor_Framework.lvlib_Message_Enqueuer.lvclass_Enqueue_Critical.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Enqueuer.lvclass:Enqueue Critical.vi]
+|No description found (add content in vi description)
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Enqueue
+|:imgpath: Actor_Framework.lvlib_Message_Enqueuer.lvclass_Enqueue.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Enqueuer.lvclass:Enqueue.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message Enqueuer.lvclass:Enqueue.vi)+++
+
+
+
++++Sends a message.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Equals Not A Refnum
+|:imgpath: Actor_Framework.lvlib_Message_Enqueuer.lvclass_Equals_Not_A_Refnum.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Enqueuer.lvclass:Equals Not A Refnum.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message Enqueuer.lvclass:Equals Not A Refnum.vi)+++
+
+
+
++++Checks whether a message enqueuer reference is equal to Not a Refnum. Unlike the Not a Number/Path/Refnum? function, this function does not check whether a non-zero reference still is valid. Refer to the detailed help for more information.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Message Dequeuer.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Message Dequeuer" {
+{field} -Priority Queue : LV Class
+{static} {method} ~Init from Existing Queue()
+{static} {method} +Dequeue()
+{static} {method} +Equals Not A Refnum()
+
+}
+"Actor Framework.lvlib:Message Dequeuer" *-- "Message Priority Queue"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Init from Existing Queue
+|:imgpath: Actor_Framework.lvlib_Message_Dequeuer.lvclass_Init_from_Existing_Queue.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Dequeuer.lvclass:Init from Existing Queue.vi]
+|No description found (add content in vi description)
+|:imgpath: scope-community.png
+image:{imgpath}[scope-community.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Dequeue
+|:imgpath: Actor_Framework.lvlib_Message_Dequeuer.lvclass_Dequeue.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Dequeuer.lvclass:Dequeue.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message Dequeuer.lvclass:Dequeue.vi)+++
+
+
+
++++Reads a message that a top-level actor sent to its caller. Use this VI to interact with non-actor code, not in a VI that belongs to an actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Equals Not A Refnum
+|:imgpath: Actor_Framework.lvlib_Message_Dequeuer.lvclass_Equals_Not_A_Refnum.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Dequeuer.lvclass:Equals Not A Refnum.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message Dequeuer.lvclass:Equals Not A Refnum.vi)+++
+
+
+
++++Checks whether a message dequeuer reference is equal to Not a Refnum. Unlike the Not a Number/Path/Refnum? function, this function does not check whether a non-zero reference still is valid. Refer to the detailed help for more information.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Message Queue.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.2
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Actor Framework.lvlib:Message Queue" {
+{field} -Message Enqueuer : LV Class
+{field} -Message Dequeuer : LV Class
+{field} -Message Priority Queue : LV Class
+{static} {method} +Obtain Message Queue()
+{static} {method} +Release Message Queue()
+
+}
+"Actor Framework.lvlib:Message Queue" *-- "Message Enqueuer"
+"Actor Framework.lvlib:Message Queue" *-- "Message Dequeuer"
+"Actor Framework.lvlib:Message Queue" *-- "Message Priority Queue"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Obtain Message Queue
+|:imgpath: Actor_Framework.lvlib_Message_Queue.lvclass_Obtain_Message_Queue.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Queue.lvclass:Obtain Message Queue.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message Queue.lvclass:Obtain Message Queue.vi)+++
+
+
+
++++Obtains the reference to the message queue that the caller uses to communicate with the top-level actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Read Dequeuer
+|:imgpath: Actor_Framework.lvlib_Message_Queue.lvclass_Read_Dequeuer.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Queue.lvclass:Read Dequeuer.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message Queue.lvclass:Read Dequeuer.vi)+++
+
+
+
++++Extracts the reference needed to read messages from the top-level actor.+++
+
+
+
++++Use the Obtain Message Queue method to obtain the <B>Message Queue</B> input.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Read Enqueuer
+|:imgpath: Actor_Framework.lvlib_Message_Queue.lvclass_Read_Enqueuer.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Queue.lvclass:Read Enqueuer.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message Queue.lvclass:Read Enqueuer.vi)+++
+
+
+
++++Extracts the reference needed to send messages to the top-level actor.+++
+
+
+
++++Use the Obtain Message Queue method to obtain the <B>Message Queue</B> input.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Release Message Queue
+|:imgpath: Actor_Framework.lvlib_Message_Queue.lvclass_Release_Message_Queue.vi.png
+image:{imgpath}[Actor Framework.lvlib:Message Queue.lvclass:Release Message Queue.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message Queue.lvclass:Release Message Queue.vi)+++
+
+
+
++++Releases the reference to a message queue.+++
+
+
+
++++Use the Obtain Message Queue method to obtain the <B>Message Queue</B> input.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Protected Actor Handle.lvclass
+
+*Responsibility:*
++++An object of this class wraps access to an actor in order to limit a debugger's ability to interfere with the operation of the actors and to protect the debugger from actors stopping unexpectedly.+++
+
+
+*Version:* 1.0.0.1
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "AF Debug.lvlib:Protected Actor Handle" {
+{field} -Enqueuer : LV Class
+{field} -ID : String
+{field} -Caller ID : String
+{field} -Qualified Name : String
+{field} -Actor Core Name : String
+{field} -Alias : String
+{static} {method} +Create()
+{static} {method} +Emergency Stop()
+{static} {method} +Open Block Diagram()
+{static} {method} +Open Front Panel()
+{static} {method} +Ping()
+{static} {method} +Stop()
+
+}
+"AF Debug.lvlib:Protected Actor Handle" *-- "Message Enqueuer"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Create
+|:imgpath: AF_Debug.lvlib_Protected_Actor_Handle.lvclass_Create.vi.png
+image:{imgpath}[AF Debug.lvlib:Protected Actor Handle.lvclass:Create.vi]
+|+++Given the information about an actor, provided by the debug layer of the Actor Framework, this VI creates an actor handle that an attached debugger can use for limited manipulation of the running actor.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Emergency Stop
+|:imgpath: AF_Debug.lvlib_Protected_Actor_Handle.lvclass_Emergency_Stop.vi.png
+image:{imgpath}[AF Debug.lvlib:Protected Actor Handle.lvclass:Emergency Stop.vi]
+|+++Sends the Stop Msg to the actor with emergency priority.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Open Block Diagram
+|:imgpath: AF_Debug.lvlib_Protected_Actor_Handle.lvclass_Open_Block_Diagram.vi.png
+image:{imgpath}[AF Debug.lvlib:Protected Actor Handle.lvclass:Open Block Diagram.vi]
+|+++Opens the block diagram of the running actor's Actor Core clone VI.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Open Front Panel
+|:imgpath: AF_Debug.lvlib_Protected_Actor_Handle.lvclass_Open_Front_Panel.vi.png
+image:{imgpath}[AF Debug.lvlib:Protected Actor Handle.lvclass:Open Front Panel.vi]
+|+++Opens the front panel of the running actor's Actor Core clone VI.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Ping
+|:imgpath: AF_Debug.lvlib_Protected_Actor_Handle.lvclass_Ping.vi.png
+image:{imgpath}[AF Debug.lvlib:Protected Actor Handle.lvclass:Ping.vi]
+|+++Sends the Ping Msg to the actor and waits for a reply to know how long the ping took to arrive. Use this VI in a debugger to test whether the actor is still alive.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Read Details
+|:imgpath: AF_Debug.lvlib_Protected_Actor_Handle.lvclass_Read_Details.vi.png
+image:{imgpath}[AF Debug.lvlib:Protected Actor Handle.lvclass:Read Details.vi]
+|+++Reads identification information about the actor, useful for display in a debugger.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Stop
+|:imgpath: AF_Debug.lvlib_Protected_Actor_Handle.lvclass_Stop.vi.png
+image:{imgpath}[AF Debug.lvlib:Protected Actor Handle.lvclass:Stop.vi]
+|+++Sends the Stop Msg to the actor with normal priority.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Ping Msg.lvclass
+
+*Responsibility:*
++++This message can be sent to any actor. It is a synchronous message: the Send method will not return until the message is received by the actor. When the message is received, the time between send and receive is computed using the high-resolution timer.+++
+
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "AF Debug.lvlib:Ping Msg" {
+{field} -Reply Queue : NoType
+{static} {method} +Send Ping()
+{method} +Do()
+{method} #Drop Message Core()
+
+}
+"Actor Framework.lvlib:Message" <|-- "AF Debug.lvlib:Ping Msg"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name|Connector pane|Description|S.|R.|I.
+
+|Send Ping
+|:imgpath: AF_Debug.lvlib_Ping_Msg.lvclass_Send_Ping.vi.png
+image:{imgpath}[AF Debug.lvlib:Ping Msg.lvclass:Send Ping.vi]
+|+++This VI sends a synchronous message to any actor. This VI outputs the time delay between sending the message and the actor receiving the message (computed using the high-resolution timer). Delay will be zero if there is an error. Errors occur only if the actor has already quit before the ping is sent or if LabVIEW runs out of memory.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-preallocated.png
+image:{imgpath}[reentrancy-preallocated.png]
+|:imgpath: inlined.png
+image:{imgpath}[inlined.png]
+
+|Do
+|:imgpath: AF_Debug.lvlib_Ping_Msg.lvclass_Do.vi.png
+image:{imgpath}[AF Debug.lvlib:Ping Msg.lvclass:Do.vi]
+|+++This VI delivers the Ping Msg to any actor. This VI does not invoke any methods on the actor. It simply returns to the sender the time delay (using the high-resolution timer) between the send and the receive of the message.+++
+
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+
+|Drop Message Core
+|:imgpath: AF_Debug.lvlib_Ping_Msg.lvclass_Drop_Message_Core.vi.png
+image:{imgpath}[AF Debug.lvlib:Ping Msg.lvclass:Drop Message Core.vi]
+|+++(<B>Filename</B>: Actor Framework.lvlib:Message.lvclass:Drop Message Core.vi)+++
+
+
+
++++Defines what a message does if it is in the message queue when the queue is released. At this point, the actor has shut down, so it will never process the message.+++
+
+
+
++++By default, this method does nothing. A child class may override it to define behavior. National Instruments provides the Reply Msg class to override this method. This class releases its internal queue, which causes any caller of the Send Message and Wait For Response method to stop waiting and return an error.+++
+
+|:imgpath: scope-protected.png
+image:{imgpath}[scope-protected.png]
+|:imgpath: reentrancy-shared.png
+image:{imgpath}[reentrancy-shared.png]
+|:imgpath: empty.png
+image:{imgpath}[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Register Actor Msg.lvclass
+
+*Responsibility:*
++++This message is sent to an actor as it is launching, before Pre-Launch Init even has a chance to execute. It will cause the Actor Core to register its clone number with the debugging tools, which will allow the debugger to perform operations such as opening the actor's block diagram.+++
+
+
+*Version:* 1.0.0.0
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "AF Debug.lvlib:Register Actor Msg" {
+{field} -Actor Enqueuer : LV Class
+{field} -Debug Alias : String
+{field} -Details : Cluster
+{static} {method} -Send Register Actor()
+{method} -Do()
+
+}
+"Actor Framework.lvlib:Message" <|-- "AF Debug.lvlib:Register Actor Msg"
+"AF Debug.lvlib:Register Actor Msg" *-- "Message Enqueuer"
+
+
+
+@enduml
+....
+
+This library has no functions set to non private scope.
+
+== Legal Information
+
+=== Document creation
+
+This document has been generated using the following tools.
+
+==== Antidoc
+
+Project website: https://wovalab.gitlab.io/open-source/labview-doc-generator/[Antidoc] 
+
+Maintainer website: https://wovalab.com[Wovalab] 
+
+BSD 3-Clause License
+
+Copyright (C) 2019, Wovalab,
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+==== Asciidoc for LabVIEW(TM)
+
+Project website: https://wovalab.gitlab.io/open-source/asciidoc-toolkit/[Asciidoc toolkit] 
+
+Maintainer website: https://wovalab.com[Wovalab] 
+
+BSD 3-Clause License
+
+Copyright (C) 2019, Wovalab,
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+==== Graph Builder
+
+Project website: https://gitlab.com/cgambini/graph-builder[Graph Builder]
+
+BSD 3-Clause License
+
+Copyright (c) 2020, Cyril GAMBINI
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+==== classy Diagram Viewer
+
+Project website: https://gitlab.com/tatiana.boye/classy-diagram-viewer[classy Diagram Viewer]
+
+BSD 3-Clause License
+
+Copyright (c) 2021, Tatiana Boyé
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+=== Product used in the project
+
+Antidoc hasn't been able to detect third party products in the project.
+This is the author's responsibility to list any of the missing product used.

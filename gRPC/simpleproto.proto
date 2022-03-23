@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message simpleMsgReq {
+    string name = 1;
+}
+
+message simpleMgsReply {
+    string hello = 1; 
+}
+
+service hello {
+    rpc hi (simpleMsgReq) returns (simpleMgsReply);
+}
